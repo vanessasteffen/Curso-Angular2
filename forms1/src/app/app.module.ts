@@ -10,12 +10,12 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import {TemplateFormModule} from "./template-form/template-form.module";
 import { FormDebugComponent } from './form-debug/form-debug.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataFormComponent,
-
+    DataFormComponent
 
   ],
   imports: [
@@ -23,7 +23,8 @@ import { FormDebugComponent } from './form-debug/form-debug.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    TemplateFormModule
+    TemplateFormModule,
+    RouterModule
 
   ],
   providers: [],
